@@ -27,7 +27,7 @@ export default function TennisCoach() {
       const formData = new FormData();
       formData.append('image', selectedFile);
 
-      const response = await axios.post('http://127.0.0.1:5000/api/analyze', formData, {
+      const response = await axios.post('http://localhost:8080/api/analyze', formData, {
         headers: { 'Content-Type': 'multipart/form-data' }
       });
 
